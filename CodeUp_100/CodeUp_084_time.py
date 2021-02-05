@@ -2,7 +2,7 @@ import time
 
 hmt = int(input("how many time?"))
 tot_time = 0
-r, g, b = map(int, input().split())
+r, g, b = map(int, input('r,g,b=').split())
 for i in range(0, hmt+1):
     start = time.time()
     count = 0
@@ -14,4 +14,4 @@ for i in range(0, hmt+1):
     print(count)
     print(time.time()-start)
     tot_time = tot_time + (time.time()-start)
-print(tot_time/hmt)
+print("avg_time =",tot_time/hmt,"s")
