@@ -9,4 +9,4 @@ for i in range(N):
             if tot <= M:
                 tot_list.append(tot)
 tot_list.sort()
-print(tot_list[len(tot_list)-1])
+print(tot_list[-1])
