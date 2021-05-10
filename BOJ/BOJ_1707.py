@@ -25,7 +25,7 @@ for i in range(k):
     v, e = map(int, sys.stdin.readline().split(' ')) #v,e 입력
     visited = [False] * (v+1) # v+1개의 False값을 가진 visited[] 생성
     visited[0] = 1 #미사용 0번째 값 1로 초기화
-    result = 'YES' # 기본 result 'YES'로 초기화
+    result = 'YES' # 기본 temp 'YES'로 초기화
     adj = makeAdj(v,e)
     dfs(1,cnt=1)
     if visited.count(False):
