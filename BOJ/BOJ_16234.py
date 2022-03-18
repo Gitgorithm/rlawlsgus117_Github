@@ -35,7 +35,6 @@ while True:
             if not united[i][j] and len(nations) == united_num:
                 start = (i, j)
                 BFS(start)
-
     if len(nations) != (N**2 + 1):
         for i in range(1, len(nations)):
             temp = nations[i][0] // (len(nations[i]) - 1)

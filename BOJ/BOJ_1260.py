@@ -31,7 +31,6 @@ for e in adj:
 
 visited = [False] * (n+1)
 dfs(v)
-print()
 visited = [False] * (n+1)
 bfs(v)
 print(adj)
